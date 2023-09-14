@@ -28,8 +28,7 @@ let myMap = {
 			this.businesses[i].lat,
 			this.businesses[i].long,
 		])
-			.bindPopup(`<p1>${this.businesses[i].name}</p1>`)
-			.addTo(this.map)
+			.bindPopup(`<p1>${this.businesses[i].name}</p1>`).addTo(this.map).openPopup()
 		}
 	},
 
